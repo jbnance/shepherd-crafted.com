@@ -1,0 +1,10 @@
+####################### Spotlight #########################
+style: "style1 orient-right content-align-left image-position-center onload-image-fade-in invert"
+id: "contact"
+title: "Contact"
+content: |
+  <h3>Shepherd Crafted, LLC</h3>
+  <b>Jason Nance</b><br />
+  <a target="_blank" href="mailto:jason@ShepherdCrafted.com" class="fav icon fa-envelope"> jason@ShepherdCrafted.com</a><br />
+  <span class="icon fa-phone"></span> 314.604.8147
+image: "images/contact.jpg"

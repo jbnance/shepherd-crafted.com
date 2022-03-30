@@ -1,0 +1,10 @@
+<section class="wrapper style1 align-center invert">
+    <div class="inner">
+        {{ with .title }}<h2>{{ . }}</h2>{{ end }}
+        <div class="items {{ .style }}">
+            {{ range .puppers }}
+                {{ partial "pupper" . }}
+            {{ end }}
+        </div>
+    </div>
+</section>

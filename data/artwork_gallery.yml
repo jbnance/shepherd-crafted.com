@@ -1,0 +1,93 @@
+# Slightly altered, custom "galleryb" partial
+# (no main title or content)
+style: "style2 small lightbox onload-fade-in"
+pictures:
+  - title: "Bench"
+    content: ""
+    image: "images/artwork_gallery/fulls/bench.jpg"
+    thumb: "images/artwork_gallery/thumbs/bench.jpg"
+    button: "Details"
+
+  - title: "Berry Bowl"
+    content: ""
+    image: "images/artwork_gallery/fulls/berry_bowl.jpg"
+    thumb: "images/artwork_gallery/thumbs/berry_bowl.jpg"
+    button: "Details"
+
+  - title: "Bird 1"
+    content: ""
+    image: "images/artwork_gallery/fulls/bird1.jpg"
+    thumb: "images/artwork_gallery/thumbs/bird1.jpg"
+    button: "Details"
+
+  - title: "Bird 2"
+    content: ""
+    image: "images/artwork_gallery/fulls/bird2.jpg"
+    thumb: "images/artwork_gallery/thumbs/bird2.jpg"
+    button: "Details"
+
+  - title: "Black Vessel"
+    content: ""
+    image: "images/artwork_gallery/fulls/black_vessel.jpg"
+    thumb: "images/artwork_gallery/thumbs/black_vessel.jpg"
+    button: "Details"
+
+  - title: "Button Vase"
+    content: ""
+    image: "images/artwork_gallery/fulls/button_vase.jpg"
+    thumb: "images/artwork_gallery/thumbs/button_vase.jpg"
+    button: "Details"
+
+  - title: "Faux Wine Barrel"
+    content: ""
+    image: "images/artwork_gallery/fulls/faux_wine_barrel.jpg"
+    thumb: "images/artwork_gallery/thumbs/faux_wine_barrel.jpg"
+    button: "Details"
+
+  - title: "Hawaii Box 1"
+    content: ""
+    image: "images/artwork_gallery/fulls/hawaii_box1.jpg"
+    thumb: "images/artwork_gallery/thumbs/hawaii_box1.jpg"
+    button: "Details"
+
+  - title: "Hawaii Box 2"
+    content: ""
+    image: "images/artwork_gallery/fulls/hawaii_box2.jpg"
+    thumb: "images/artwork_gallery/thumbs/hawaii_box2.jpg"
+    button: "Details"
+
+  - title: "Pallet Chair 1"
+    content: ""
+    image: "images/artwork_gallery/fulls/pallet_chair1.jpg"
+    thumb: "images/artwork_gallery/thumbs/pallet_chair1.jpg"
+    button: "Details"
+
+  - title: "Pallet Chair 2"
+    content: ""
+    image: "images/artwork_gallery/fulls/pallet_chair2.jpg"
+    thumb: "images/artwork_gallery/thumbs/pallet_chair2.jpg"
+    button: "Details"
+
+  - title: "Pump Fountain"
+    content: ""
+    image: "images/artwork_gallery/fulls/pump_fountain.jpg"
+    thumb: "images/artwork_gallery/thumbs/pump_fountain.jpg"
+    button: "Details"
+
+  - title: "Ribbed Bowl"
+    content: ""
+    image: "images/artwork_gallery/fulls/ribbed_bowl.jpg"
+    thumb: "images/artwork_gallery/thumbs/ribbed_bowl.jpg"
+    button: "Details"
+
+  - title: "Small Pitcher"
+    content: ""
+    image: "images/artwork_gallery/fulls/small_pitcher.jpg"
+    thumb: "images/artwork_gallery/thumbs/small_pitcher.jpg"
+    button: "Details"
+
+  - title: "Spool Vase"
+    content: ""
+    image: "images/artwork_gallery/fulls/spool_vase.jpg"
+    thumb: "images/artwork_gallery/thumbs/spool_vase.jpg"
+    button: "Details"

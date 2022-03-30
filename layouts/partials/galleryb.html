@@ -1,0 +1,9 @@
+<!-- Gallery -->
+<section class="wrapper style1 align-center">
+    <!-- Gallery -->
+    <div class="gallery {{ .style }}">
+        {{ range .pictures }}
+            {{ partial "picture" . }}
+        {{ end }}
+    </div>
+</section>

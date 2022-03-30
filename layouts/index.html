@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+	{{ partial "banner" site.Data.banner }}
+	{{ partial "spotlight" site.Data.metalwork }}
+	{{ partial "galleryb" site.Data.metalwork_gallery }}
+	{{ partial "spotlight" site.Data.artwork }}
+	{{ partial "galleryb" site.Data.artwork_gallery }}
+	{{ partial "spotlight" site.Data.contact }}
+	{{ partial "puppers" site.Data.shepherds }}
+	{{ partial "footer" . }}
+
+{{ end }}

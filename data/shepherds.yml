@@ -1,0 +1,18 @@
+title: "Our Shepherds"
+style: "style1 big onload-fade-in"
+puppers:
+  - image: "images/fezzik.jpg"
+    name: "Fezzik"
+    content: "Our first dog, Fezzik set the bar by which all others are measured.  Loyal and attentive, Fezzik lived to play ball."
+
+  - image: "images/max.jpg"
+    name: "Max"
+    content: "Our sweet boy, Max always wants to play with you.  Few things disrupt his chill, and few people can resist Max's loving gaze."
+
+  - image: "images/rosie.jpg"
+    name: "Rosie"
+    content: "Rosie joined our family as an adult and immediately found her place as everyone's mom.  Rosie loved to sing with the sirens."
+
+  - image: "images/drea.jpg"
+    name: "Drea"
+    content: "A sweet, energetic little fireplug, Drea also joined our family as an adult.  She speaks German and small cities could be powered with Drea's drive."

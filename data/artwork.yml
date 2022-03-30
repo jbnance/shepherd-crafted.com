@@ -1,0 +1,10 @@
+####################### Spotlight #########################
+style: "style1 orient-left content-align-left image-position-center onload-image-fade-in invert"
+id: "artwork"
+title: "Artwork"
+content: |
+  Comfortable in multiple mediums, we specialize in functional pieces that will add that perfect touch to your space.  We can work with existing items that bring back fond memories, or create all new ones.
+button: 
+  label: "Contact US"
+  link: "#contact"
+image: "images/artwork.jpg"

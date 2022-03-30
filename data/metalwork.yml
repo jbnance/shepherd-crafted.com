@@ -1,0 +1,10 @@
+####################### Spotlight #########################
+style: "style1 orient-left content-align-left image-position-center onload-image-fade-in invert"
+id: "metalwork"
+title: "Metalwork"
+content: |
+  Our welding and fabrication services will work with you to bring your project to life - even if all you have is an idea.  We work with new and upcycled materials to produce quality products that you'll love to use and display.  Need something repaired?  We can help there, too.
+button: 
+  label: "Contact Us"
+  link: "#contact"
+image: "images/metalwork.jpg"

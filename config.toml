@@ -1,0 +1,34 @@
+## -----------------------------------------------
+## Basic Configuration
+## -----------------------------------------------
+
+baseURL = "http://shepherdcrafted.com/"
+title = "Shepherd Crafted"
+theme = "hugo-story"
+languageCode = "en-us"
+
+
+## -----------------------------------------------
+## Hugo Built-in Features
+## -----------------------------------------------
+
+disableKinds = ["taxonomy", "taxonomyTerm", "section"]
+# googleAnalytics = "your-google-analytics-id"
+
+
+## -----------------------------------------------
+## Site Parameters
+## -----------------------------------------------
+
+[Params]
+  description = "Finely crafted metal and artwork"
+  logo = "images/banner.jpg"
+  favicon = true
+
+[Params.social]
+  email = "jason@ShepherdCrafted.com"
+#  instagram = "https://instagram.com"
+#  facebook = "https://facebook.com"
+#  pinterest = "https://www.pinterest.com/ShepherdCrafted"
+#  youtube = "https://youtube.com"
+#  twitter = "https://twitter.com/ShepherdCrafted"

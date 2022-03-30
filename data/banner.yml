@@ -1,0 +1,16 @@
+####################### Banner #########################
+style: "style3 orient-right content-align-right image-position-center fullscreen onload-image-fade-in onload-content-fade-right invert"
+title: "Shepherd Crafted"
+subtitle: |
+  Finely Crafted Metal &amp; Artwork
+content: |
+  At Shepherd Crafted, we believe in the value of craftsmanship.<br />
+  We put our heart into each project, and you'll see that in the<br />
+  details of the quality products we create for you.
+button1:
+  label: "Contact"
+  link: "#contact"
+button2:
+  label: "Portfolio"
+  link: "#metalwork"
+image: "images/banner.jpg"

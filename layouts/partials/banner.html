@@ -1,0 +1,15 @@
+<!-- Banner -->
+<section class="banner {{ .style }}">
+    <div class="content">
+        {{ with .title }}<h1>{{ . }}</h1>{{ end }}
+        {{ with .subtitle }}<p class="major">{{ . | safeHTML }}</p>{{ end }}
+        {{ with .content }}<p>{{ . | safeHTML }}</p>{{ end }}
+        <ul class="actions stacked">
+            {{ with .button1 }}<li><a href="{{ .link }}" class="button primary large wide smooth-scroll-middle">{{ .label }}</a></li>{{ end }}
+            {{ with .button2 }}<li><a href="{{ .link }}" class="button primary large wide smooth-scroll-middle">{{ .label }}</a></li>{{ end }}
+        </ul>
+    </div>
+    {{ with .image }}<div class="image">
+        <img src="{{.}}" alt="Shepherd Crafted" />
+    </div>{{ end }}
+</section>

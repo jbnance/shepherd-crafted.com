@@ -1,0 +1,17 @@
+<!-- Footer -->
+<footer class="wrapper style1 align-center invert">
+    <div class="inner">
+        <ul class="icons">
+            {{ with .Site.Params.social.email }}<li><a target="_blank" href="mailto:{{.}}" class="fav icon style2 fa-envelope"><span class="label">Email</span></a></li>{{ end }}
+            {{ with .Site.Params.social.instagram }}<li><a target="_blank" href="{{.}}" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>{{ end }}
+            {{ with .Site.Params.social.facebook }}<li><a target="_blank" href="{{.}}" class="icon brands style2 fa-facebook"><span class="label">Facebook</span></a></li>{{ end }}
+            {{ with .Site.Params.social.pinterest }}<li><a target="_blank" href="{{.}}" class="icon brands style2 fa-pinterest"><span class="label">Pinterest</span></a></li>{{ end }}
+            {{ with .Site.Params.social.youtube }}<li><a target="_blank" href="{{.}}" class="icon brands style2 fa-youtube"><span class="label">YouTube</span></a></li>{{ end }}
+            {{ with .Site.Params.social.twitter }}<li><a target="_blank" href="{{.}}" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>{{ end }}
+        </ul>
+        <ul class="alt">
+            <li>&copy; Copyright 2022 | Shepherd Crafted, LLC | All Rights Reserved</li>
+            <li><span class="icon brands fa-creative-commons"></span> <a target="_blank" href="https://github.com/caressofsteel/hugo-story">Hugo Story</a> theme by <a target="_blank" href="https://github.com/caressofsteel/">CaressOfSteel</a> licensed under the <a target="_blank" href="https://github.com/caressofsteel/hugo-story/blob/master/LICENSE">Creative Commons Attribution 3.0 License</a></li>
+        </ul>
+    </div>
+</footer>
