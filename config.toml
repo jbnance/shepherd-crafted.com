@@ -7,6 +7,10 @@ title = "Shepherd Crafted"
 theme = "hugo-story"
 languageCode = "en-us"
 
+# This doesn't appear to be used in Hugo Story
+copyright = "Shepherd Crafted, LLC"
+
+enableRobotsTXT = true
 
 ## -----------------------------------------------
 ## Hugo Built-in Features
