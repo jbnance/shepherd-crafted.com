@@ -2,3 +2,5 @@
 .vscode/
 .nfs*
 .hugo_build.lock
+# Where site gets published (hugo -D)
+public/
