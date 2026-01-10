@@ -16,7 +16,7 @@ enableRobotsTXT = true
 ## Hugo Built-in Features
 ## -----------------------------------------------
 
-disableKinds = ["taxonomy", "taxonomyTerm", "section"]
+disableKinds = ["taxonomy", "section"]
 # googleAnalytics = "your-google-analytics-id"
 
 
@@ -36,3 +36,8 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
 #  pinterest = "https://www.pinterest.com/ShepherdCrafted"
 #  youtube = "https://youtube.com"
 #  twitter = "https://twitter.com/ShepherdCrafted"
+
+[Params.asset]
+  fontawesome_css = ["css/fontawesome-all.min.css"]
+  fontawesome_js = ["js/fontawesome-all.min.js"]
+
