@@ -41,3 +41,9 @@ disableKinds = ["taxonomy", "section"]
   fontawesome_css = ["css/fontawesome-all.min.css"]
   fontawesome_js = ["js/fontawesome-all.min.js"]
 
+###
+# https://gohugo.io/host-and-deploy/deploy-to-github-pages/
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
