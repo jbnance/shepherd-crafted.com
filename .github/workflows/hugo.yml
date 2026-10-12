@@ -2,9 +2,11 @@
 name: Deploy Hugo site to Pages
 
 env:
-  # Define tool versions
-  DART_SASS_VERSION: 1.105.0
-  HUGO_VERSION: 0.167.0
+  # Uncomment if a fallback to pinned version is necessary
+  #GO_VERSION: 1.27.1
+  #NODE_VERSION: 24.21.0
+  #DART_SASS_VERSION: 1.105.0
+  #HUGO_VERSION: 0.167.0
 
   # Set the build time zone
   TZ: America/Chicago
@@ -52,18 +54,58 @@ jobs:
         run: |
           mkdir -p "${HOME}/.local"
 
+      - name: Resolve Tool Versions
+        run: |
+          if [ -z "${GO_VERSION:-}" ]; then
+            GO_VERSION='stable'
+          else
+            echo "Using pinned Go version: '${GO_VERSION}'"
+          fi
+
+          if [ -z "${NODE_VERSION:-}" ]; then
+            NODE_VERSION='lts/*'
+          else
+            echo "Using pinned Node.js version: '${NODE_VERSION}'"
+          fi
+
+          if [ -z "${DART_SASS_VERSION:-}" ]; then
+            DART_SASS_VERSION=$(curl -sfL https://api.github.com/repos/sass/dart-sass/releases/latest | jq -r '.tag_name')
+            echo "Resolved Dart Sass version: '${DART_SASS_VERSION}'"
+          else
+            echo "Using pinned Dart Sass version: '${DART_SASS_VERSION}'"
+          fi
+
+          if [ -z "${HUGO_VERSION:-}" ]; then
+            HUGO_VERSION=$(curl -sfL https://api.github.com/repos/gohugoio/hugo/releases/latest | jq -r '.tag_name' | sed 's/^v//')
+            echo "Resolved Hugo version: '${HUGO_VERSION}'"
+          else
+            echo "Using pinned Hugo version: '${HUGO_VERSION}'"
+          fi
+
+          for name in DART_SASS_VERSION HUGO_VERSION; do
+            if [ -z "${!name}" ]; then
+              echo "Failed to resolve ${name}" >&2
+              exit 1
+            fi
+          done
+
+          echo "GO_VERSION=${GO_VERSION}" >> "${GITHUB_ENV}"
+          echo "NODE_VERSION=${NODE_VERSION}" >> "${GITHUB_ENV}"
+          echo "DART_SASS_VERSION=${DART_SASS_VERSION}" >> "${GITHUB_ENV}"
+          echo "HUGO_VERSION=${HUGO_VERSION}" >> "${GITHUB_ENV}"
+
       - name: Install Go
         if: hashFiles('go.mod') != ''
         uses: actions/setup-go@v7
         with:
-          go-version: 'stable'
+          go-version: ${{ env.GO_VERSION }}
           cache: false
 
       - name: Install Node.js
         if: hashFiles('package-lock.json') != ''
         uses: actions/setup-node@v7
         with:
-          node-version: 'lts/*'
+          node-version: ${{ env.NODE_VERSION }}
 
       - name: Install Dart Sass
         run: |
