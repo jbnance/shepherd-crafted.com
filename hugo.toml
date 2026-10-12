@@ -5,7 +5,7 @@
 baseURL = "http://shepherdcrafted.com/"
 title = "Shepherd Crafted"
 theme = "hugo-story"
-languageCode = "en-us"
+locale = "en-us"
 
 # This doesn't appear to be used in Hugo Story
 copyright = "Shepherd Crafted, LLC"
@@ -40,4 +40,10 @@ disableKinds = ["taxonomy", "section"]
 [Params.asset]
   fontawesome_css = ["css/fontawesome-all.min.css"]
   fontawesome_js = ["js/fontawesome-all.min.js"]
+
+###
+# https://gohugo.io/host-and-deploy/deploy-to-github-pages/
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
 

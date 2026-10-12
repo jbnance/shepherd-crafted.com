@@ -4,6 +4,7 @@
         <div class="items {{ .style }}">
             {{ range .puppers }}
                 {{ partial "pupper" . }}
+                {{ if .break }}</div><div class="items {{ $.style }}">{{ end }}
             {{ end }}
         </div>
     </div>
